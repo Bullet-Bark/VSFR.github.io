@@ -1,0 +1,69 @@
+<?php
+  if(!isset($_SESSION)){
+    session_start();
+  }
+
+  session_unset();
+
+  session_destroy();
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+ 
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="agendaweb">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="maxresdefault.jpg"/>
+
+  <title>AGENDA - LOGIN</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="CSS-LOGIN.css">
+</head>
+<body>
+  
+  <div class="container">
+    <div class="tela">
+    <h1>LOGIN</h1>
+
+    <!-- CAIXA -->
+    <div class="menu">
+
+        <div class="TextBoxs">
+          <input type="text" name="nome" id="nome" placeholder="Digite seu Nome">
+          <input type="password" name="senha" id="senha" placeholder="Digite sua Senha">
+          
+        </div>
+
+      <div class="conteudo">
+        <div class="botoes">
+      <a href="Menu.php">LOGAR</a>
+      </div>
+      <div class="outros">
+      <h5>Não tem uma conta? <a href="LOGIN-CRIACAO.php">Crie aqui!</a></h5>
+      <a class= "senha" href="LOGIN-SENHA.php"><h5>Esqueceu a senha?</h5></a>
+      </div>
+      </div>
+
+    </div>
+    <!-- CAIXA -->
+
+    </div>
+  </div>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
